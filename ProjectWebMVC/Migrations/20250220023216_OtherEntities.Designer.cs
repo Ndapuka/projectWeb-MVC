@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectWebMVC.Data;
 
@@ -11,9 +12,11 @@ using ProjectWebMVC.Data;
 namespace ProjectWebMVC.Migrations
 {
     [DbContext(typeof(ProjectWebMVCContext))]
-    partial class ProjectWebMVCContextModelSnapshot : ModelSnapshot
+    [Migration("20250220023216_OtherEntities")]
+    partial class OtherEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
