@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LyrF7nWbRzA=",
+  "dgSpecHash": "04LZHM0SdjY=",
   "success": true,
   "projectFilePath": "C:\\Users\\mnmaq\\OneDrive\\Ambiente de Trabalho\\ProjectWeb-MVC\\ProjectWebMVC\\ProjectWebMVC\\ProjectWebMVC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mnmaq\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
     "C:\\Users\\mnmaq\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\mnmaq\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\mnmaq\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
