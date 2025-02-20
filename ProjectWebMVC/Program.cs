@@ -2,6 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using ProjectWebMVC.Data;
+using ProjectWebMVC.Services;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ProjectWebMVCContext>(options =>
@@ -11,6 +14,7 @@ builder.Services.AddDbContext<ProjectWebMVCContext>(options =>
     ));
 
 builder.Services.AddScoped<SeedingService>();
+builder.Services.AddScoped<SellerService>();
 //services.AddScoped<SeedingService>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
