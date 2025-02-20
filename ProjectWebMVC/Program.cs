@@ -1,4 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using Microsoft.Extensions.DependencyInjection;
+using ProjectWebMVC.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ProjectWebMVCContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("ProjectWebMVCContext"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("ProjectWebMVCContext"))
+    ));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

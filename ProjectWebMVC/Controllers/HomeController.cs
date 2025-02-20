@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ProjectWebMVC.Models;
+using ProjectWebMVC.Models.ViewModels;
 using System.Diagnostics;
 
 namespace ProjectWebMVC.Controllers
@@ -20,6 +21,9 @@ namespace ProjectWebMVC.Controllers
 
         public IActionResult Privacy()
         {
+            ViewData["Name"] = "Moises Ndapuka Maquina";
+            ViewData["Message"] = "all about the privacy politic";
+            
             return View();
         }
 
